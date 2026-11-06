@@ -1,0 +1,160 @@
+/* MAIN PAGE */
+.my-library-page {
+  min-height: 100vh;
+  background: #f7f5ef;
+  padding: 35px 6% 60px;
+  color: #343434;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* TOP IMAGE */
+.library-hero {
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 55px;
+
+  background-image:
+    linear-gradient(
+      rgba(20, 20, 20, 0.45),
+      rgba(20, 20, 20, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1600");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.library-hero-overlay {
+  color: white;
+  padding: 20px;
+}
+
+.library-hero-overlay p {
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.library-hero-overlay h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.library-hero-overlay span {
+  font-size: 15px;
+}
+
+/* SECTIONS */
+.library-section {
+  margin-bottom: 50px;
+}
+
+.library-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ded9cf;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.library-section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin: 0;
+}
+
+.library-section-heading span {
+  color: #92795c;
+  font-size: 14px;
+}
+
+/* BOOK GRID */
+.library-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* BOOK CARDS */
+.library-book-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 110px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.library-book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+/* BOOK ICON */
+.book-icon {
+  min-width: 52px;
+  height: 65px;
+  background: #eee8dc;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  color: #92795c;
+}
+
+/* BOOK INFORMATION */
+.library-book-info h3 {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.library-book-info p {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+/* EMPTY MESSAGE */
+.library-empty {
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  color: #888;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .my-library-page {
+    padding: 25px 5% 40px;
+  }
+
+  .library-hero {
+    height: 220px;
+  }
+
+  .library-hero-overlay h1 {
+    font-size: 35px;
+  }
+
+  .library-section-heading h2 {
+    font-size: 21px;
+  }
+
+  .library-books-grid {
+    grid-template-columns: 1fr;
+  }
+}

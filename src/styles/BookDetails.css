@@ -1,0 +1,256 @@
+/* MAIN PAGE */
+
+.book-details-page {
+  background-color: #f7f5ef;
+  min-height: 100vh;
+  padding: 60px 8%;
+  color: #333;
+}
+
+/* PAGE TITLE */
+
+.book-details-page > h1 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 45px;
+  color: #292929;
+}
+
+/* BOOK INFORMATION CONTAINER */
+
+.book-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 45px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* BOOK COVER */
+
+.book-details-cover {
+  flex: 0 0 280px;
+  text-align: center;
+}
+
+.book-details-cover img {
+  width: 250px;
+  height: 360px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* BOOK INFORMATION */
+
+.book-details-info {
+  flex: 1;
+}
+
+.book-details-info span {
+  display: inline-block;
+  background: #eee8d9;
+  color: #8b7045;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.book-details-info h2 {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  margin: 18px 0 10px;
+}
+
+.book-details-info h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #777;
+}
+
+.book-details-info p {
+  line-height: 1.8;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+/* BORROW AND WISHLIST BUTTONS */
+
+.borrow-button,
+.wishlist-button {
+  display: block;
+  width: 230px;
+  padding: 13px 18px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.borrow-button {
+  background-color: #292929;
+  color: white;
+}
+
+.borrow-button:hover {
+  background-color: #9b8052;
+}
+
+.borrow-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.wishlist-button {
+  background-color: #eee8d9;
+  color: #80663e;
+}
+
+.wishlist-button:hover {
+  background-color: #e3d7bd;
+}
+
+/* SUCCESS MESSAGE */
+
+.success-message {
+  color: #39804b;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* REVIEWS SECTION */
+
+.reviews-section {
+  max-width: 1000px;
+  margin: 60px auto 20px;
+}
+
+.reviews-section > h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  color: #292929;
+}
+
+.reviews-subtitle {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* REVIEWS GRID */
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* REVIEW CARD */
+
+.review-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.review-card h3 {
+  margin: 0;
+}
+
+.review-stars {
+  margin: 10px 0;
+}
+
+.review-card p:last-child {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ADD REVIEW */
+
+.add-review {
+  background: white;
+  padding: 30px;
+  margin-top: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.add-review h2 {
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+}
+
+.add-review form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-review label {
+  font-weight: bold;
+}
+
+.add-review select,
+.add-review textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-family: inherit;
+}
+
+.add-review textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.add-review button {
+  background: #292929;
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-review button:hover {
+  background: #9b8052;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+  .book-details-container {
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .book-details-cover img {
+    width: 190px;
+    height: 280px;
+  }
+
+  .book-details-info h2 {
+    font-size: 27px;
+  }
+
+  .reviews-list {
+    grid-template-columns: 1fr;
+  }
+
+  .borrow-button,
+  .wishlist-button {
+    width: 100%;
+  }
+
+}
