@@ -16,7 +16,7 @@ import { BookProvider } from "./context/BookContext";
 function App() {
   return (
     <BookProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <NavBar />
 
         <Routes>
