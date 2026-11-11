@@ -209,7 +209,7 @@
   overflow-wrap: break-word;
 }
 
-/* WISHLIST BUTTON */
+/* BOOK BUTTON */
 
 .book-card button {
   width: 100%;
@@ -248,7 +248,7 @@
 @media (max-width: 750px) {
 
   .explore-books-page {
-    padding: 30px 4%;
+    padding: 30px 3%;
   }
 
   .books-grid {
@@ -273,8 +273,6 @@
 
   .book-card {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
     min-width: 0;
   }
 
@@ -298,7 +296,6 @@
 
   .book-card button {
     width: 100%;
-    margin-top: auto;
     padding: 8px 4px;
     font-size: 11px;
   }
@@ -309,49 +306,54 @@
 @media (max-width: 450px) {
 
   .explore-books-page {
-    padding: 25px 3%;
+    padding: 22px 2%;
   }
 
   .books-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    align-items: start;
+    gap: 8px;
+    width: 100%;
+    align-items: stretch;
   }
 
   .book-card {
-    padding: 7px;
-    height: 220px;
-    min-height: 220px;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    padding: 8px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     box-sizing: border-box;
+    overflow: visible;
   }
 
   .book-card img {
     width: 100%;
-    height: 90px;
-    min-height: 90px;
+    height: 95px;
+    min-height: 95px;
     object-fit: contain;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 
   .book-card h3 {
     font-size: 12px;
-    line-height: 1.2;
-    margin: 0 0 4px;
+    line-height: 1.3;
+    margin: 0 0 5px;
+    overflow-wrap: break-word;
   }
 
   .book-card p {
     font-size: 10px;
-    line-height: 1.2;
-    margin: 0 0 3px;
+    line-height: 1.35;
+    margin: 0 0 4px;
+    overflow-wrap: break-word;
   }
 
   .book-card button {
     width: 100%;
     font-size: 10px;
-    padding: 6px 3px;
+    padding: 7px 3px;
     margin-top: auto;
   }
 
